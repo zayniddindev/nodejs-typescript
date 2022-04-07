@@ -24,8 +24,7 @@
     "@types/find-config": "^1.0.1",
     "@types/jsonwebtoken": "^8.5.8",
     "@types/node": "^17.0.23",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.7.0"
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -37,6 +36,7 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "objection": "^3.0.1",
-    "pg": "^8.7.3"
+    "pg": "^8.7.3",
+    "ts-node": "^10.7.0"
   }
 }
