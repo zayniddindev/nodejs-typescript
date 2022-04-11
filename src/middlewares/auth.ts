@@ -11,7 +11,7 @@ interface TokenInterface {
 const verifyToken = (req: Request, res: Response, next: NextFunction) => {
   try {
     const token =
-      req.body.token || req.query.token || req.headers["x-access-token"];
+      req.body.token || req.query.token || req.headers["x-access-token"] || req.headers["authorization"]; 
     const decodedToken = jwt.verify(token, process.env.TOKEN_KEY as string);
     next();
   } catch (err) {

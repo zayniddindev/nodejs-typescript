@@ -111,7 +111,7 @@ const login = async (req: Request, res: Response) => {
       res.status(400).send("Invalid Password");
     }
   } catch (err) {
-    console.log(err);
+    res.status(400).send(err);
   }
 };
 
